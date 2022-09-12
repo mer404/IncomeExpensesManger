@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.AddCategoryActivity">
+
+    <EditText
+        android:id="@+id/edtAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/bg_for_edittext"
+        android:hint="Enter Category"
+        android:imeOptions="actionDone"
+        android:inputType="textAutoComplete"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/apbtnAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/menu_item_transaction"
+        android:backgroundTint="@color/blue"
+        android:elevation="@dimen/_10sdp"
+        android:text="ADD"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
