@@ -7,8 +7,14 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.expensemanager.R
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.LoadAdError
+
 
 class MainActivity : AppCompatActivity() {
+    lateinit var adView: AdView
     var link: String =
         "https://play.google.com/store/apps/details?id=com.mlab.expense.manager&hl=en_IN&gl=US"
     lateinit var rlvIncome: RelativeLayout
@@ -22,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initView()
         premium()
+        bannerAdExample()
     }
 
     private fun premium() {
@@ -64,6 +71,57 @@ class MainActivity : AppCompatActivity() {
         rlvCategory.setOnClickListener {
             var i = Intent(this, AddCategoryActivity::class.java)
             startActivity(i)
+        }
+    }
+
+    private fun bannerAdExample() {
+        adView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
+
+        adView.adListener = object : AdListener() {
+            override fun onAdFailedToLoad(p0: LoadAdError) {
+                super.onAdFailedToLoad(p0)
+//                val toastMessage: String = "ad fail to load"
+//                Toast.makeText(applicationContext, toastMessage.toString(), Toast.LENGTH_LONG)
+//                    .show()
+            }
+
+            override fun onAdLoaded() {
+                super.onAdLoaded()
+//                val toastMessage: String = "ad loaded"
+//                Toast.makeText(applicationContext, toastMessage.toString(), Toast.LENGTH_LONG).show()
+            }
+
+            override fun onAdOpened() {
+                super.onAdOpened()
+//                val toastMessage: String = "ad is open"
+//                Toast.makeText(applicationContext, toastMessage.toString(), Toast.LENGTH_LONG).show()
+            }
+
+            override fun onAdClicked() {
+                super.onAdClicked()
+//                val toastMessage: String = "ad is clicked"
+//                Toast.makeText(applicationContext, toastMessage.toString(), Toast.LENGTH_LONG).show()
+            }
+
+            override fun onAdClosed() {
+                super.onAdClosed()
+//                val toastMessage: String = "ad is closed"
+//                Toast.makeText(applicationContext, toastMessage.toString(), Toast.LENGTH_LONG).show()
+            }
+
+            override fun onAdImpression() {
+                super.onAdImpression()
+//                val toastMessage: String = "ad impression"
+//                Toast.makeText(applicationContext, toastMessage.toString(), Toast.LENGTH_LONG).show()
+            }
+//             fun onAdLeftApplication() {
+//                super.onAdLeftApplication()
+//                val toastMessage: String = "ad left application"
+//                Toast.makeText(applicationContext, toastMessage.toString(), Toast.LENGTH_LONG).show()
+//            }
+
         }
     }
 

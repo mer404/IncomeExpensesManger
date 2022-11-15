@@ -2,13 +2,14 @@ package com.example.expensemanager.activity
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import com.example.expensemanager.adapter.CategoryAdapter
 import com.example.expensemanager.R
+import com.example.expensemanager.adapter.CategoryAdapter
 import com.example.expensemanager.adapter.MenuAdapter
 import com.example.expensemanager.classes.DataBaseHelper
 import com.example.expensemanager.classes.modelClasses.CategoryModelClass
@@ -143,9 +144,7 @@ class AddDataActivity : AppCompatActivity() {
                         id: Long
                     ) {
                         selectedMode = mode[position]
-//                    println("Muscle Group selected is $selectedMode")  // <-- this works
 //                        Log.e("TAG", "onItemSelected: ===>" + selectedMode)
-
                     }
 
                     override fun onNothingSelected(parent: AdapterView<*>) {
@@ -206,13 +205,11 @@ class AddDataActivity : AppCompatActivity() {
         } else if (time.isEmpty()) {
             Toast.makeText(this, "Please Select Date", Toast.LENGTH_SHORT).show()
         } else {
-//            Log.e(
-//                "TAG",
-//                "initView: ==>" + amount + "  " + categorySelected + "  " + date + "  " + selectedMode + "  " + notes + "  " + TYPE
-//            )
             dbHelper.insertData(amount, categorySelected, date, selectedMode, notes, time, type)
-            Toast.makeText(this, "saved", Toast.LENGTH_SHORT).show()
-            onBackPressed()
+            Toast.makeText(this, "Added Record Successfully", Toast.LENGTH_SHORT).show()
+            var i = Intent(this, AllTransactionActivity::class.java)
+            startActivity(i)
+            finish()
         }
     }
 }

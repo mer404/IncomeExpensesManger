@@ -26,7 +26,7 @@ class ExpenseAdapter(var list: ArrayList<IncomeExpensesModelClass>) :
     }
 
     override fun onBindViewHolder(holder: ExpenseAdapter.MyViewHolder, position: Int) {
-        holder.txtDateExpenses.text = list[position].date.toString()
+        holder.txtDateExpenses.text = list[position].date
         holder.txtExpensesAmount.text = list[position].amount.toString()
         holder.txtCategoryExpenses.text = list[position].category
         holder.txtNoteExpenses.text = list[position].note

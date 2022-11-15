@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/bg_for_edittext.xml" value="0.1515" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/filter_icon.xml" value="0.1705" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1515" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/main_bg.xml" value="0.1515" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/drawable/menu_item_bg.xml" value="0.1515" />
@@ -13,8 +14,8 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_add_data.xml" value="0.2359375" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_add_expnses.xml" value="0.2359375" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_add_income.xml" value="0.25" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_all_transaction.xml" value="0.2359375" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_main.xml" value="0.23796296296296296" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_all_transaction.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_report_actvity.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/ExpenseManager/app/src/main/res/layout/category_spinner.xml" value="0.25" />

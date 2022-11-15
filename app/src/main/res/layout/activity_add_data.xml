@@ -11,12 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_25sdp"
                     android:layout_gravity="center_vertical|end"
-                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_100sdp"
                     android:layout_marginTop="@dimen/_2sdp"
                     android:src="@drawable/ic_baseline_check_24" />
             </LinearLayout>

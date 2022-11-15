@@ -17,18 +17,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpenseManager"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".GoogleAdActivity"
+            android:exported="false"
+            android:label="@string/title_activity_google_ad" />
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
         <activity
             android:name=".activity.AddDataActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.AddCategoryActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.ReportActvity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.AllTransactionActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.SplashScreenActivity"
             android:excludeFromRecents="true"
@@ -41,7 +56,7 @@
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:exported="false" />
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -6,5 +6,4 @@ class IncomeExpensesModelClass(
     var category: String,
     var date: String,
     var note: String,
-
-    )
+)

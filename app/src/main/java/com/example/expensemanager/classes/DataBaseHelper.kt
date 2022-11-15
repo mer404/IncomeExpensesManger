@@ -113,6 +113,4 @@ class DataBaseHelper(
         } while (cursor.moveToNext())
         return list
     }
-
-
 }

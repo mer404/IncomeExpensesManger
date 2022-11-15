@@ -27,14 +27,12 @@ class ExpensesFragment : Fragment() {
         initView(e)
         return e
     }
-
     private fun initView(e:View) {
         rcvTransaction = e.findViewById(R.id.rcvExpensesTransaction)
         dbHelper = activity?.let { DataBaseHelper(it, "ExpensesManager.db", null, 1) }!!
 
         list = dbHelper.expensesDisplay()
         expensesAdapter?.updateData(list)
-
         expensesAdapter = ExpenseAdapter(list)
         val manager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
         rcvTransaction.layoutManager = manager

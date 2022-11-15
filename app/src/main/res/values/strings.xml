@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">ExpenseManager</string>
     <string name="selected_item">Selected item:</string>
+    <string name="title_activity_google_ad">GoogleAdActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_sample">Banner Ad Sample</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string-array name="CategoryName">
         <item>Business</item>
         <item>Clothing</item>
@@ -8,6 +12,7 @@
         <item>Education</item>
         <item>Fun</item>
         <item>Medical</item>
+
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

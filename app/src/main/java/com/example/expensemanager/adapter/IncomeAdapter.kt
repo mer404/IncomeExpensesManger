@@ -26,7 +26,7 @@ class IncomeAdapter(var list: ArrayList<IncomeExpensesModelClass>) :
 
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.txtIncomeDate.text = list[position].date.toString()
+        holder.txtIncomeDate.text = list[position].date
         holder.txtIncomeAmount.text = list[position].amount.toString()
         holder.txtIncomeCategory.text = list[position].category
         holder.txtIncomeNote.text = list[position].note
@@ -35,7 +35,6 @@ class IncomeAdapter(var list: ArrayList<IncomeExpensesModelClass>) :
     override fun getItemCount(): Int {
         return list.size
     }
-
     fun updateData(list: ArrayList<IncomeExpensesModelClass>) {
         this.list = ArrayList()
         this.list.addAll(list)

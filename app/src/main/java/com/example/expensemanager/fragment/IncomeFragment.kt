@@ -29,13 +29,11 @@ class IncomeFragment : Fragment() {
     }
 
     private fun initView(i: View) {
-
         rcvIncome = i.findViewById(R.id.rcvIncomeTransaction)
         dHelper = activity?.let { DataBaseHelper(it, "ExpensesManager.db", null, 1) }!!
 
         list = dHelper.incomeDisplay()
         incomeAdapter?.updateData(list)
-
         incomeAdapter = IncomeAdapter(list)
         val manager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
         rcvIncome.layoutManager = manager
